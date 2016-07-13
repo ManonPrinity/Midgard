@@ -1,4 +1,13 @@
 <section id="map_view" class="view">
 	<h2>Carte</h2>
 
+	<div class="controls">
+		
+	</div>
+
+	<div id="map_container" ng-init="init();" ng-mousemove="mousemove($event.layerX, $event.layerY);" ng-mouseenter="enter();" ng-mouseleave="leave();">
+		<div id="logs">
+			{{posx}} - {{posy}}
+		</div>
+	</div>
 </section>
