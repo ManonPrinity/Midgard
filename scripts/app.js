@@ -2,7 +2,7 @@ var app = angular.module("app", ["ngRoute"]);
 
 app.config(function($routeProvider)
 {
-	$routeProvider.when("/", {templateUrl: "partials/server.html"});
+	$routeProvider.when("/", {templateUrl: "partials/home.html"});
 	$routeProvider.when("/serveur", {templateUrl: "partials/server.html"});
 	$routeProvider.when("/carte", {templateUrl: "partials/map.html"});
 	$routeProvider.when("/clans", {templateUrl: "partials/clans.html"});

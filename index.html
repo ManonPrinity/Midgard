@@ -3,27 +3,25 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="description" content="Serveur pvp rp Life is Feodal fr.">
-		<meta name="keywords" content="lif,feodal,midgard,serveur,pvp,rp">
-		<meta name="author" content="">
+		<meta name="keywords" content="life,is,feodal,lif,midgard,serveur,pvp,rp">
+		<meta name="author" content="Kamipown / Prinity / Rwanna">
 		<meta name="Identifier-url" content="https://kamipown.github.io/">
-		<base href="/Midgard/">
 		<link rel="stylesheet" type="text/css" href="styles/style.css"/>
 		<link rel="icon" type="image/png" href="img/favicon.png"/>
 		<title>Midgard</title>
 	</head>
 	
 	<body ng-app="app">
-		<header id="main_header" ng-include="'templates/header.html'"></header>
+		<div id="main_div">
+			<header id="main_header" ng-include="'templates/header.html'"></header>
 
-		<nav id="main_nav" ng-include="'templates/nav.html'"></nav>
+			<nav id="main_nav" ng-include="'templates/nav.html'"></nav>
 
-		<div id="main_div" ng-view></div>
-
-		<!-- <footer id="main_footer" ng-include="'templates/footer.html'" ng-controller="footer_ctrl"></footer> -->
+			<main id="main" role="main" ng-view></main>
+		</div>
 
 		<script type="text/javascript" src="https://code.angularjs.org/1.5.7/angular.min.js"></script>
 		<script type="text/javascript" src="https://code.angularjs.org/1.5.7/angular-route.min.js"></script>
 		<script type="text/javascript" src="scripts/app.js"></script>
-		<!-- <script type="text/javascript" src="scripts/controllers/footer_ctrl.js"></script> -->
 	</body>
 </html>
