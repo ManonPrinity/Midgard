@@ -55,7 +55,17 @@ ul { margin-left: 40px; list-style-type: circle;}
 			#home_view > .imgs > img:last-child { margin-left: 8px;}
 
 	#map_view {}
-		#map_view > .controles { }
+		#map_view > .controls {}
+			#map_view > .controls > p { height: 32px; line-height: 32px; font-size: 16px;}
+				#map_view > .controls > p > input { width: 16px height: 16px; margin: 8px;}
 		#map_container { display: block; position: relative; width: 768px; height: 768px; background-image: url("../img/map_800.png"); background-size: 100% 100%;}
-			#map_container > .cell { display: inline-block; border: 1px solid rgba(255, 255, 255, 0.5);}
-				#logs { position: absolute; padding: 8px; border-radius: 5px; background-color: rgba(0, 0, 0, 0.8); color: #fff; font-size: 14px;}
+			#map_container > .cell { display: inline-block; vertical-align: top; text-align: center; text-shadow: 1px 1px 1px #000; color: #fff;}
+			#map_container > .cell:hover { background-color: rgba(255, 255, 255, 0.3); font-size: 12px;}
+			#map_container.grid > .cell { border-right: 1px solid rgba(255, 255, 255, 0.5); border-bottom: 1px solid rgba(255, 255, 255, 0.5);}
+			#map_container.positions > .cell { font-size: 12px;}
+			#map_container.territories > .cell.NW { background-color: rgba(153, 0, 204, 0.5);}
+			#map_container.territories > .cell.NE { background-color: rgba(51, 133, 255, 0.5);}
+			#map_container.territories > .cell.SW { background-color: rgba(255, 204, 0, 0.5);}
+			#map_container.territories > .cell.SE { background-color: rgba(51, 204, 51, 0.5);}
+			#map_container.locked > .cell.locked { background-color: rgba(255, 0, 0, 0.5);}
+				#logs { display: none; position: absolute; padding: 8px; border-radius: 5px; background-color: rgba(0, 0, 0, 0.8); color: #fff; font-size: 14px;}
